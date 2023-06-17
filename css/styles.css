@@ -836,6 +836,10 @@ ul {
   margin-bottom: 24px;
 }
 
+.modal-name {
+  margin-bottom: 8px;
+}
+
 .madal-input:focus {
   border-color: #4d5ae5;
 }
@@ -919,7 +923,13 @@ ul {
   text-decoration: underline;
 }
 
-.check-text span {
+.input-check:checked + .check-text span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.icon-vector {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -931,10 +941,4 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.input-check:checked + .check-text span {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
 }
