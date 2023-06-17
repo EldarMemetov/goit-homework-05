@@ -786,7 +786,6 @@ ul {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  margin-top: 72px;
   margin-bottom: 16px;
 }
 
@@ -798,7 +797,7 @@ ul {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-label {
   font-family: "Roboto";
@@ -830,8 +829,13 @@ ul {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
+
+.modal-checkbox {
+  margin-bottom: 24px;
+}
+
 .madal-input:focus {
   border-color: #4d5ae5;
 }
@@ -873,7 +877,6 @@ ul {
 }
 
 .modal-send {
-  display: block;
   min-width: 169px;
   height: 56px;
   align-self: center;
@@ -920,21 +923,18 @@ ul {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  fill: transparent;
   border-radius: 2px;
   margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
 }
 
 .input-check:checked + .check-text span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-}
-
-.icon-vector {
 }
