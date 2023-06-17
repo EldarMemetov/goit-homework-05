@@ -923,13 +923,7 @@ ul {
   text-decoration: underline;
 }
 
-.input-check:checked + .check-text .icon-vector {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
-
-.icon-vector {
+.check-text span {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -941,4 +935,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.input-check:checked + .check-text span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
