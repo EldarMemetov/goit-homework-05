@@ -514,21 +514,22 @@ ul {
 }
 
 .button-footer {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   border-radius: 4px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 
 .text-subscribe {
@@ -551,6 +552,11 @@ ul {
   height: 40px;
   padding-left: 16px;
   margin-right: 24px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #ffffff;
 }
 
 .input-footer::placeholder {
@@ -563,6 +569,7 @@ ul {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 
 .item-form {
@@ -652,7 +659,7 @@ ul {
   width: 360px;
 }
 
-.portfolio-list {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -750,7 +757,7 @@ ul {
   position: absolute;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .icon-button {
@@ -780,7 +787,7 @@ ul {
   color: #2e2f42;
   text-align: center;
   margin-top: 72px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .madal-input {
@@ -798,25 +805,28 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: inline block;
   margin-bottom: 4px;
+  display: block;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-wrap {
   position: relative;
+  margin-bottom: 16px;
 }
 
 .input-icon {
   fill: transparent;
   fill: #2e2f42;
   position: absolute;
-  left: 8px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field {
@@ -839,11 +849,21 @@ ul {
   padding: 16px 8px;
   outline: transparent;
   transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-privacy {
 }
 
 .modal-textarea::placeholder {
   font-size: 12px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
@@ -873,6 +893,7 @@ ul {
   align-items: center;
   justify-content: center;
   margin: 24px 120px 24px 120px;
+  display: block;
 }
 
 .modal-send :hover,
@@ -896,8 +917,8 @@ ul {
 }
 
 .check-text span {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
@@ -905,10 +926,15 @@ ul {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
 }
 
 .input-check:checked + .check-text span {
-  background: #404bbf;
+  background-color: #404bbf;
   border: none;
-  fill: #ffffff;
+  fill: #f4f4fd;
+}
+
+.icon-vector {
 }
