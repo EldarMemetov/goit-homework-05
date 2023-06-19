@@ -815,7 +815,6 @@ ul {
 
 .input-wrap {
   position: relative;
-  margin-bottom: 16px;
 }
 
 .input-icon {
@@ -899,7 +898,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 24px 120px 24px 120px;
+  margin: 0 auto;
   display: block;
 }
 
